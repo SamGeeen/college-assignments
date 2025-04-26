@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --body-bg-color:rgb(211, 194, 152);
+    --main-bg-color:rgb(251, 246, 238);
+    --main-font-color:rgb(112, 110, 110);
+    --prepartion-time-bg-color:rgb(248, 232, 244);
+    --prepartion-header-color:rgb(156, 67, 154);
+    --section-header-color: rgb(88, 57, 34);
+    --indent-list:2ch;
+
+}
+@font-face {
+    font-family: Recoleta;
+    src: url(assets/Recoleta-RegularDEMO.otf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(assets/Roboto-VariableFont_wdth\,wght.ttf);
+}
+body,html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-color: var(--body-bg-color);
+    font-family: Roboto,sans-serif;
+    
+}
+main{
+    background-color: var(--main-bg-color);
+    width: 50%;
+
+    margin: 0 auto;
+    padding: 1.74rem;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    border-radius: 1.4rem;
+    color: var(--main-font-color);
+}
+.img-container{
+    border-radius: inherit;
+  
+    width: 100%;
+    height: 15rem;
+}
+.img-container img{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+}
+.recipe-title , .section-header{
+    font-family: Recoleta,serif;
+    color: black;
+}
+.section-header{
+    color: var(--section-header-color);
+    font-weight: bold;
+}
+.preparation-time{
+    background-color: var(--prepartion-time-bg-color) ;
+    padding: 1rem;
+}
+.preparation-time h4{
+    color: var(--prepartion-header-color);
+
+}
+li{
+    text-indent: var(--indent-list) hanging;
+    margin-bottom: 0.5rem;
+    line-height: 1.6em;
+}
+li > span{
+    margin-left: var(--indent-list);
+    margin-right: 0.15ch;
+    font-weight: 600;
+    color: black;
+}
+ol li::marker{
+    font-weight: bold;
+    color: var(--section-header-color);
+    
+}
+.nutrition-table{
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+.nutrition-table td {
+   
+    border-bottom: 1px solid rgb(141, 138, 135);
+ 
+    
+     text-align: left;
+     padding: 0.7rem;
+     padding-left: 1.5rem;
+  
+}
+.nutrition-table tr:last-of-type td{
+    border-bottom: none;
+}
+.nutrition-table td{
+    color: var(--main-font-color);
+    font-weight: 500;
+}
+.nutrition-table td:last-of-type{
+    font-weight: 800;
+    color: var(--section-header-color);
+
+}
+
+
+
+ul,ol{
+    padding-left: 2ch;
+}
+
+hr{
+    color: rgb(237, 237, 237);
+    margin: 2rem 0;
+    opacity: 0.5;
+}
