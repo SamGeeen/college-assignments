@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigistration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="post" id="rig-form">
+        <h3>Responsive Rigistration Form</h3>
+        <div class="input-wrapper">
+            <img src="./asset/email-svgrepo-com.svg" alt="">
+            <input type="email" name="email-input" id="email-input" placeholder="Email">
+        </div>
+        <div class="input-wrapper">
+            <img src="./asset/password-lock-svgrepo-com.svg" alt="">
+            <input type="password" name="password-input" id="password-input" placeholder="Password">
+
+        </div>
+        <div class="input-wrapper">
+            <img src="./asset/password-lock-svgrepo-com.svg" alt="">
+            <input type="password" name="rePassword-input" id="rePassword-input" placeholder="Re-type Password">
+
+        </div>
+        <div class="name-input">
+
+            <div class="input-wrapper">
+                <img src="./asset/profile-round-1342-svgrepo-com.svg" alt="">
+                <input type="text" name="first-name" id="first-name-txt" placeholder="First Name">
+            </div>
+
+            <div class="input-wrapper">
+                <img src="./asset/profile-round-1342-svgrepo-com.svg" alt="">
+
+                <input type="text" name="last-name" id="last-name-txt" placeholder="Last Name">
+
+            </div>
+            
+
+        </div>
+        
+        <div class="gender-input">
+            <input type="radio" name="gender" id="gender-male" value="male">
+            <label for="gender-male">male</label>
+
+            <input type="radio" name="gender" id="gender-female" value="female">
+            <label for="gender-female">female</label>
+
+        </div>
+        <select name="country" id="country">
+            <option value="" >--Please choose an country--</option>
+            <option value="Syria">Syria</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Lebaono">Lebanon</option>
+        </select>
+        <div class="tems-agree">
+            <input type="checkbox" name="terms-agreed" id="agree-terms">
+            <label for="agree-terms">i agree with the terms and conditions</label>
+
+        </div>
+        <div class="newsettler">
+            <input type="checkbox" name="recieve-settler" id="recieve-settler">
+            <label for="recieve-settler">i want to receive the newsettlers</label>
+
+        </div>
+        <button type="submit" id="reg-btn">Register</button>
+    </form>
+</body>
+</html>
